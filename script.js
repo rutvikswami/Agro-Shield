@@ -233,10 +233,6 @@ async function runScan() {
   try {
     const API_KEY = "gemini_api_key"
 
-    fetch(`https://generativelanguage.googleapis.com/v1/models?key=${API_KEY}`)
-    .then(res => res.json())
-    .then(data => console.log(data));
-
     const res = await fetch(`https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=${API_KEY}`,
     {
         method: "POST",
