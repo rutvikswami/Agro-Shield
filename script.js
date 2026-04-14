@@ -231,7 +231,7 @@ async function runScan() {
     {"isPlant":true,"plantName":"<common English crop name>","scientificName":"<scientific name or empty string>","isHealthy":<true or false>,"condition":"<Healthy OR exact disease name>","diseaseType":"<Fungal|Bacterial|Viral|Pest|Nutritional Deficiency|None>","severity":"<none|low|med|high>","confidence":<integer 82-99>,"affectedParts":["<part1>","<part2>"],"symptoms":["<s1>","<s2>","<s3>","<s4>"],"cause":"<2-3 sentences: causative organism and triggering conditions>","spreadRisk":"<Low|Moderate|High|Very High>","yieldImpact":"<e.g. 20-50% yield loss or None>","urgency":"<none|routine|moderate|immediate>","treatment":["<step1>","<step2>","<step3>","<step4>","<step5>"],"prevention":["<p1>","<p2>","<p3>","<p4>"],"organicOption":"<one organic/natural treatment alternative, or empty string>"}`;
 
   try {
-    const API_KEY = "AIzaSyC4vYayG4LkOGwZO4SP--7qpWANbxbXaag"
+    const API_KEY = "gemini_api_key"
 
     fetch(`https://generativelanguage.googleapis.com/v1/models?key=${API_KEY}`)
     .then(res => res.json())
